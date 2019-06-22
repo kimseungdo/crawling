@@ -8,7 +8,7 @@ import urllib.request
 searchterm = 'megadeth'
 url = "https://www.google.com/search?q="+searchterm+"&source=lnms&tbm=isch"
 # chrom webdriver 사용하여 브라우저를 가져온다.
-browser = webdriver.Chrome('./chromedriver_win32 (1)/chromedriver')
+browser = webdriver.Chrome('./chromedriver_win32-1/chromedriver')
 browser.get(url)
 # User-Agent를 통해 봇이 아닌 유저정보라는 것을 위해 사용
 header={'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/43.0.2357.134 Safari/537.36"}
