@@ -3,7 +3,8 @@ from selenium.webdriver.common.keys import Keys
 import json
 import os
 import urllib.request
- 
+import multiprocessing
+
 #검색 url생성 searchterm 찾을 이미지
 searchterm = 'megadeth'
 url = "https://www.google.com/search?q="+searchterm+"&source=lnms&tbm=isch"
