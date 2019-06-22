@@ -17,15 +17,17 @@ counter = 0
 succounter = 0
  
 print(os.path)
-# 소스코드가 있는 경로에 '검색어' 폴더가 없으면 만들어준다.
+# 소스코드가 있는 경로에 '검색어' 폴더없으면 생성
 if not os.path.exists(searchterm):
     os.mkdir(searchterm)
  
 for _ in range(500):
     # 가로 = 0, 세로 = 10000 픽셀 스크롤한다.
     browser.execute_script("window.scrollBy(0,10000)")
-# div태그에서 class name이 rg_meta인 것을 찾아온다
-
+'''
+구글 검색시 이미지탭에서 이미지 태그는 div태그고 rg_meta에 이미지가 놓임
+div태그에서 class name이 rg_meta인 것을 찾아온다
+'''
 for x in browser.find_elements_by_xpath('//div[contains(@class,"rg_meta")]'):
     counter = counter + 1
     print ("Total Count:", counter)
@@ -45,8 +47,12 @@ for x in browser.find_elements_by_xpath('//div[contains(@class,"rg_meta")]'):
         File.write(raw_img)
         File.close()
         succounter = succounter + 1
+        '''
+        python3 버전경우 urllib.request고
+        python2 일 경우 urllib2임
+        '''
     except:
-            print ("can't get img")
+        print ("can't get img")
             
-print (succounter, "succesfully downloaded")
+print (succounter, "succes download")
 browser.close()
