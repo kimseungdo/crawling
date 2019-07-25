@@ -16,7 +16,22 @@ header={'User-Agent':"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KH
 # 이미지 카운터
 counter = 0
 succounter = 0
- 
+
+#image size HOR//VER
+horizontal = 1280
+vertical = 720
+'''
+SD size 720 576
+HD size 1280 720
+FULL HD 1920 1080
+Quad HD 3840 2160
+2K 4K 4096 2160
+Horizenal
+<input jsname="d7w5xc" class="ktf mini" value="" autocomplete="off" id="kbqVne" type="text">
+Virtualize
+<input jsname="zPIbne" class="ktf mini" value="" autocomplete="off" id="XOyNzd" type="text">
+'''
+
 print(os.path)
 # 소스코드가 있는 경로에 '검색어' 폴더없으면 생성
 if not os.path.exists(searchterm):
