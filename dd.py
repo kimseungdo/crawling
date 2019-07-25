@@ -36,7 +36,7 @@ print(os.path)
 # 소스코드가 있는 경로에 '검색어' 폴더없으면 생성
 if not os.path.exists(searchterm):
     os.mkdir(searchterm)
- 
+   
 for _ in range(500):
     # 가로 = 0, 세로 = 10000 픽셀 스크롤한다.
     browser.execute_script("window.scrollBy(0,10000)")
