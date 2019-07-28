@@ -25,7 +25,7 @@ height
 #단순 이미지 검색
 #url = "https://www.google.com/search?q="+searchterm+"&source=lnms&tbm=isch"
 #이미지 크기선택 검색
-url = "https://www.google.com/search?q="+searchterm+"&biw=1662&bih=784&tbm=isch&source=lnt&tbs=isz:ex,iszw:"+horizontal+",iszh:"+vertical
+url = "https://www.google.com/search?q="+searchterm+"&biw=1662&bih=784&tbm=isch&source=lnt&tbs=isz:ex,iszw:"+width+",iszh:"+height
 
 # chrom webdriver 사용하여 브라우저를 가져온다.
 browser = webdriver.Chrome('./chromedriver_win32-1/chromedriver')
